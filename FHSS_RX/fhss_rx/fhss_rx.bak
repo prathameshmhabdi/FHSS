@@ -1,0 +1,62 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF:nRF24L01P U?
+U 1 1 5C5DDCB4
+P 7200 2650
+F 0 "U?" H 7200 3628 50  0000 C CNN
+F 1 "nRF24L01P" H 7200 3537 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 7400 3450 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2726/34069/file/nRF24L01P_Product_Specification_1_0.pdf" H 7200 2750 50  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U?
+U 1 1 5C5DDD75
+P 2450 2700
+F 0 "U?" H 1809 2746 50  0000 R CNN
+F 1 "ATmega328P-PU" H 1809 2655 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 2450 2700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2450 2700 50  0001 C CNN
+	1    2450 2700
+	1    0    0    -1  
+$EndComp
+Text Label 6500 2250 2    50   ~ 0
+MISO
+Text Label 6500 2150 2    50   ~ 0
+MOSI
+Text Label 6500 2350 2    50   ~ 0
+SCK
+Text Label 6500 2450 2    50   ~ 0
+CSN
+Wire Wire Line
+	6500 2150 6600 2150
+Wire Wire Line
+	6500 2250 6600 2250
+Wire Wire Line
+	6500 2350 6600 2350
+Wire Wire Line
+	6500 2450 6600 2450
+Text Label 6500 2650 2    50   ~ 0
+CE
+Wire Wire Line
+	6500 2650 6600 2650
+Text Label 6500 2750 2    50   ~ 0
+IRQ
+Wire Wire Line
+	6500 2750 6600 2750
+$EndSCHEMATC
